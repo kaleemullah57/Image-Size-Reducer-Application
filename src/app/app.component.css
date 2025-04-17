@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 0px 0px;
+}
+
+
+
+.container .drop-downContainer {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container .drop-downContainer h2{
+    font-size: 32px;
+    font-family: Space Grotesk;
+    padding: 10px;
+}
+
+.container .drop-downContainer select{
+    background-color: transparent;
+    width: 10%;
+    height: auto;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: Space Grotesk;
+    border: none;
+    padding: 10px;
+}

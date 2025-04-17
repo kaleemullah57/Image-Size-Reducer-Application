@@ -1,0 +1,53 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 0px 0px;
+}
+
+.container h2{
+    font-size: 32px;
+    font-family: Space Grotesk;
+    padding: 10px;
+}
+
+/*  Input CSS */
+.container input{
+    width: 100%;
+    height: 80px;
+    /* font-size: 15px; */
+    font-family: Space Grotesk;
+    text-align: center;
+    padding: 0px 0px 0px 55px;
+}
+
+
+
+
+
+
+
+
+/*  Compressed Section CSS */
+.container .compressed-container{
+    width: 100%;
+    /* background-color: blue; */
+    height: auto;
+    font-size: 20px;
+    font-family: Space Gerotesk;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container .compressed-container p{
+    line-height: 1.5;
+}

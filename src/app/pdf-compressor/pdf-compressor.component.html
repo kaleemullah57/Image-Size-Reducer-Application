@@ -1,0 +1,12 @@
+<div class="container text-center p-4">
+    <h2>PDF Size Reducer</h2>
+  
+    <input type="file" (change)="handleFileInput($event)" accept="application/pdf" class="form-control my-3" />
+  
+    <div *ngIf="originalSize" class="compressed-container">
+      <p><strong>Original Size:</strong> {{ originalSize | number:'1.0-2' }} KB</p>
+      <p><strong>Compressed Size:</strong> {{ compressedSize | number:'1.0-2' }} KB</p>
+      <p><i>Compressed file has been downloaded automatically.</i></p>
+    </div>
+  </div>
+  

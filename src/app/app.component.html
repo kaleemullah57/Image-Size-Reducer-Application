@@ -1,4 +1,23 @@
 
-<div>
+<div class="container">
+
+
+  <div class="drop-downContainer">
+    <h2>Convert Your Files </h2>
+    <select [(ngModel)]="selectedFile">
+      <option value="pdf"> PDF Converter </option>
+      <option value="image"> Image Converter </option>
+    </select>
+  </div>
+
+  <div class="pdf-converter" *ngIf="selectedFile === 'pdf'">
+    <app-pdf-compressor></app-pdf-compressor>
+  </div>
+
+  <div class="image-converter" *ngIf="selectedFile === 'image'">
+    <app-image-compressor></app-image-compressor>
+  </div>
+
+  
   <router-outlet></router-outlet>
 </div>
