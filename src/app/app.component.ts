@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ImageCompressorComponent } from "./image-compressor/image-compressor.component";
 
 @Component({
   selector: 'app-root',

@@ -1,0 +1,21 @@
+<div class="container text-center p-4">
+    <div class="main-menu">
+        <h2>Image Reduce Size 10% </h2>
+        <h3>(Without Quality Loss)</h3>
+
+        <button (click)="uploadImage()" class="btn btn-primary m-2">Upload Image</button>
+
+    </div>
+    <div *ngIf="originalImage" class="originalImage">
+        <h4>Original Image</h4>
+        <img [src]="originalImage" class="img-fluid mb-2" width="300" />
+        <p>Size: {{ originalSize | number:'1.0-2' }} KB</p>
+    </div>
+
+    <div *ngIf="compressedImage" class="compressed-section">
+        <h4>Compressed Image</h4>
+        <img [src]="compressedImage" class="img-fluid mb-2" width="300" />
+        <p>Size: {{ compressedSize | number:'1.0-2' }} KB</p>
+        <button (click)="downloadImage()" class="btn btn-success">Download Compressed</button>
+    </div>
+</div>

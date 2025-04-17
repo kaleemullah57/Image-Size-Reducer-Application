@@ -1,0 +1,178 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 0px 0px;
+}
+
+
+
+/* Main Menu CSS */
+.container .main-menu{
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 20px 0px;
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .main-menu h2{
+    font-size: 36px;
+    font-family: Space Grotesk;
+    padding: 10px;
+}
+
+.container .main-menu h3{
+    font-size: 30px;
+    font-family: Space Grotesk;
+    padding: 10px;
+}
+
+.container .main-menu button{
+    color: black;
+    background-color: wheat;
+    font-size: 20px;
+    font-family: Space Grotesk;
+    border-radius: 12px;
+    border: 1px solid gray;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+
+.container .main-menu button:hover{
+    color: white;
+    background-color: rgb(212, 206, 206);
+    font-size: 20px;
+    font-family: Space Grotesk;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 5px 15px 5px 15px;
+    box-shadow: 1px 1px 1px black;
+}
+
+.container .main-menu button:focus{
+    color: white;
+    background-color: rgb(194, 121, 78);
+    font-size: 20px;
+    font-family: Space Grotesk;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 5px 15px 5px 15px;
+    box-shadow: 1px 1px 1px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Original Image CSS */
+.container .originalImage{
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 20px 0px;
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* {
+    font-size: 25px;
+    font-family: Space Grotesk;
+    padding: 10px;
+} */
+
+
+
+
+
+
+/* Compressed Image CSS */
+.container .compressed-section{
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 20px 0px;
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .compressed-section h4,
+.container .originalImage h4{
+    font-size: 25px;
+    font-family: Space Grotesk;
+    padding: 10px;
+} 
+
+.container .compressed-section img,
+.container .originalImage img{
+    width: 30%;
+    height: 30%;
+    border-radius: 8px;
+}
+
+.container .compressed-section p,
+.container .originalImage p
+{
+    font-size: 20px;
+    font-family: Space Grotesk;
+    padding: 10px;
+}
+
+.container .compressed-section button{
+    background-color: wheat;
+    font-size: 20px;
+    font-family: Space Grotesk;
+    border-radius: 12px;
+    border: 1px solid gray;
+    padding: 5px;
+    box-shadow: 1px 1px 1px black;
+}
+.container .compressed-section button:hover{
+    background-color: rgb(212, 206, 206);
+    font-size: 20px;
+    font-family: Space Grotesk;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 5px;
+    box-shadow: 1px 1px 1px black;
+}
+
+.container .compressed-section button:focus{
+    background-color: rgb(88, 194, 78);
+    font-size: 20px;
+    font-family: Space Grotesk;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 5px;
+    box-shadow: 1px 1px 1px black;
+}
