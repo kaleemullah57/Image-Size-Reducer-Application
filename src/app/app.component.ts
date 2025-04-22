@@ -4,11 +4,12 @@ import { ImageCompressorComponent } from "./image-compressor/image-compressor.co
 import { PdfCompressorComponent } from "./pdf-compressor/pdf-compressor.component";
 import { CommonModule } from '@angular/common';
 import { FormsModule} from '@angular/forms';
+import { JpgToPngComponent } from "./jpg-to-png/jpg-to-png.component";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, PdfCompressorComponent, CommonModule, FormsModule, ImageCompressorComponent],
+  imports: [RouterOutlet, PdfCompressorComponent, CommonModule, FormsModule, ImageCompressorComponent, JpgToPngComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

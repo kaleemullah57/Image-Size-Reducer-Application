@@ -20,15 +20,14 @@
     text-align: center;
 }
 
-.container .drop-downContainer h2{
+.container .drop-downContainer h2 {
     font-size: 32px;
     font-family: Space Grotesk;
     padding: 10px;
     /* width: 40%; */
 }
 
-.container .drop-downContainer select{
-    background-color: transparent;
+.container .drop-downContainer select {
     width: 25%;
     text-align: center;
     height: auto;
@@ -36,5 +35,87 @@
     font-size: 20px;
     font-family: Space Grotesk;
     border: none;
-    /* padding: 10px; */
+    background-color: rgb(231, 228, 228);
+    box-shadow: 2px 2px 2px gray;
+    padding: 8px;
 }
+
+.container .drop-downContainer select option {
+    background-color: rgb(194, 194, 194);
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet view (up to 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .container .drop-downContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .drop-downContainer h2{
+        color: black;
+        font-size: 40px;
+        font-weight: 800;
+        font-family: Space Grotesk;
+        word-spacing: 2px;
+        line-height: 2;
+    }
+    .container .drop-downContainer select{
+        /* background-color: blue; */
+        color: black;
+        width: 300px;
+        font-size: 31px;
+        font-weight: 600;
+        font-size: Space Grotesk;
+        padding: 12px;
+        word-spacing: 2px;
+    }
+    .container .drop-downContainer select option{
+        /* background-color: blue; */
+        color: black;
+        width: 300px;
+        font-size: 15px;
+        font-weight: 400;
+        font-size: Space Grotesk;
+        padding: 2px;
+        word-spacing: 2px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile view (up to 480px) */
+@media screen and (max-width: 480px) {}

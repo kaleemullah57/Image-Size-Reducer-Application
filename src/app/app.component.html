@@ -1,4 +1,3 @@
-
 <div class="container">
 
 
@@ -7,6 +6,7 @@
     <select [(ngModel)]="selectedFile">
       <option value="pdf"> PDF Converter </option>
       <option value="image"> Image Converter </option>
+      <option value="jpg-png"> Jpg To Png </option>
     </select>
   </div>
 
@@ -18,6 +18,10 @@
     <app-image-compressor></app-image-compressor>
   </div>
 
-  
+  <div class="image-converter" *ngIf="selectedFile === 'jpg-png'">
+    <app-jpg-to-png></app-jpg-to-png>
+  </div>
+
+
   <router-outlet></router-outlet>
 </div>

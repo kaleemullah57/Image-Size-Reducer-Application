@@ -1,0 +1,28 @@
+<div class="container">
+    <h2> Convert JPG to PNG</h2>
+    <input type="file" (change)="onFileSelected($event)" accept=".jpg,.jpeg" class="form-control" />
+
+
+
+    <div class="converted-image">
+        <div class="preview-container" *ngIf="originalImage">
+            <img [src]="originalImage.src" alt="Preview" >
+    
+            <h3>Choose Download Format</h3>
+    
+            <div class="dropdown-download">
+                <select id="downloadSelect" [(ngModel)]="selectedOption">
+                    <option *ngFor="let option of downloadOptions" [ngValue]="option">
+                        {{ option.label }} - {{ option.description }}
+                    </option>
+                </select>
+    
+                <button (click)="downloadImage(selectedOption)" [disabled]="!selectedOption">
+                    Download Image
+                </button>
+            </div>
+    
+        </div>
+    </div>
+    
+</div>

@@ -47,7 +47,7 @@ export class ImageCompressorComponent {
 
 
   // Brightness Helper Function
-  applyBrightness(base64: string, brightness = 1.1): Promise<string> {
+  applyBrightness(base64: string, brightness = 1): Promise<string> {
     return new Promise(resolve => {
       const img = new Image();
       img.src = base64;

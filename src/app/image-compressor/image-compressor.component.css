@@ -158,10 +158,10 @@
     box-shadow: 1px 1px 1px black;
 }
 .container .compressed-section button:hover{
-    background-color: rgb(212, 206, 206);
+    background-color: wheat;
     font-size: 20px;
     font-family: Space Grotesk;
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px solid gray;
     padding: 5px;
     box-shadow: 1px 1px 1px black;
@@ -175,4 +175,202 @@
     border: 1px solid gray;
     padding: 5px;
     box-shadow: 1px 1px 1px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet view (up to 768px) */
+@media screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        height: auto;
+    }
+    .container .main-menu{
+        width: 100%;
+    }
+    .container .main-menu h2{
+        color: black;
+        font-size: 50px;
+        font-family: Space Grotesk;
+    }
+    .container .main-menu h3{
+        color: black;
+        font-size: 30px;
+        font-family: Space Grotesk;
+    }
+    .container .main-menu button{
+        color: black;
+        font-size: 30px;
+        font-family: Space Grotesk;
+        width: 300px;
+        padding: 12px;
+        background-color: rgb(231, 228, 228);
+        box-shadow: 2px 2px 2px gray;
+        margin: 30px 0px 0px 0px;
+    }
+    .container .main-menu button:hover{
+        color: black;
+        font-size: 30px;
+        font-family: Space Grotesk;
+        width: 300px;
+        padding: 12px;
+        background-color: rgb(231, 228, 228);
+        box-shadow: -2px -2px 2px gray;   
+    }
+
+
+
+
+
+    .container .originalImage,
+    .container .compressed-section{
+        width: 100%;
+        height: auto;
+        /* background-color: blue; */
+    }
+    .container .originalImage h4,
+    .container .compressed-section h4{
+        color: black;
+        font-size: 50px;
+        font-family: Space Grotesk;
+        padding: 10px;
+    }
+    .container .originalImage img,
+    .container .compressed-section img{
+        width: 100%;
+        height: auto;
+    }
+    .container .originalImage p,
+    .container .compressed-section p{
+        color: black;
+        font-size: 30px;
+        font-family: Space Grotesk;
+        padding: 10px;
+    }
+
+    .container .compressed-section button{
+        color: black;
+        width: 400px;
+        height: 71px;
+        margin: 10px 0px 0px 0px;
+        padding: 4px;
+        background: gray;
+        box-shadow: 2px 2px 2px black;
+        border: none;
+        border-radius: 5px;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: Space Grotesk;
+    }
+    .container .compressed-section button:hover{
+        color: black;
+        width: 400px;
+        height: 71px;
+        margin: 10px 0px 0px 0px;
+        padding: 4px;
+        background: gray;
+        box-shadow: -2px -2px 2px black;
+        border: none;
+        border-radius: 5px;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: Space Grotesk;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Mobile View */
+@media screen and (max-width: 480px) {
+   .container .main-menu{
+        width: 100%;
+        height: auto;
+    }    
+    .container .main-menu h2{
+        font-size: 30px;
+        font-family: Space Grotesk;
+        color: black;
+    }
+    .container .main-menu h3{
+        font-size: 25px;
+        font-family: Space Grotesk;
+        color: black;
+    }
+
+    .container .compressed-section{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .container .compressed-section h4{
+        width: 100%;
+        height: auto;
+        font-size: 25px;
+        font-family: Space Grotesk;
+        color: black;
+    }
+    .container .compressed-section button{
+        width: 300px;
+        background-color: gray;
+        font-size: 20px;
+        font-family: Space Grotesk;
+        border-radius: 12px;
+        border: 1px solid gray;
+        padding: 3px;
+        box-shadow: 3px 3px 3px black;
+    }
+    .container .compressed-section button:hover{
+        width: 300px;
+        background-color: gray;
+        font-size: 20px;
+        font-family: Space Grotesk;
+        border-radius: 12px;
+        border: 1px solid gray;
+        padding: 3px;
+        box-shadow: -2px -2px 2px black;
+    }
 }
