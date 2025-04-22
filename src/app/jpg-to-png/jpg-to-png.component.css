@@ -26,6 +26,9 @@
     font-family: Space Grotesk;
     text-align: center;
     padding: 0px 0px 0px 55px;
+    background-color: #f8f9fa;
+    border: 2px dashed #007bff;
+    padding: 25px 0px 0px 70px;
 }
 
 
