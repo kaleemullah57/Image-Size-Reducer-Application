@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
+
 
 
 interface DownloadOption {
@@ -13,7 +13,7 @@ interface DownloadOption {
 
 @Component({
   selector: 'app-jpg-to-png',
-  imports: [CommonModule, FormsModule, RecaptchaFormsModule, RecaptchaModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './jpg-to-png.component.html',
   styleUrl: './jpg-to-png.component.css'
 })
@@ -55,21 +55,21 @@ export class JpgToPngComponent {
   // Recapthc Code.
 
 
-  captchaPassed = false;
+  // captchaPassed = false;
 
-  onCaptchaResolved(captchaResponse: string | null) {
-    if (captchaResponse) {
-      console.log('CAPTCHA passed!', captchaResponse);
-      this.captchaPassed = true;
-    }
-  }
+  // onCaptchaResolved(captchaResponse: string | null) {
+  //   if (captchaResponse) {
+  //     console.log('CAPTCHA passed!', captchaResponse);
+  //     this.captchaPassed = true;
+  //   }
+  // }
 
-  isDownload = false;
+  // isDownload = false;
   downloadImage(option: DownloadOption | null) {
-    if (!this.captchaPassed) return;
+    // if (!this.captchaPassed) return;
     if (!option || !this.originalImage) return;
 
-    this.isDownload = true;
+    // this.isDownload = true;
     const canvas = document.createElement('canvas');
     canvas.width = option.width;
     canvas.height = option.height;
@@ -87,9 +87,9 @@ export class JpgToPngComponent {
 
 
     //  Destroy this.isDownload = false;
-    setTimeout(() => {
-      this.isDownload = false;
-    }, 5000);
+    // setTimeout(() => {
+    //   this.isDownload = false;
+    // }, 5000);
   }
 
   private getBaseFileName(): string {
