@@ -61,12 +61,14 @@
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    margin: 10px 0px 10px 0px;
 }
 
-.container .converted-image .preview-container .recaptcha #re-captcha{
+/* .container .converted-image .preview-container .recaptcha #re-captcha{
     width: 50px;
     height: auto;
-}
+    background-color: blue;
+} */
 
 
 .container .converted-image .preview-container img{
@@ -141,6 +143,7 @@
     box-shadow: -2px -2px 2px black;
     cursor: pointer;
 }
+
 .container .download-section a button:hover{
     background-color: darkgray;
     box-shadow: 2px 2px 2px black;
