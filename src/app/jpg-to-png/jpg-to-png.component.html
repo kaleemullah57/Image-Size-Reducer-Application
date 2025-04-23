@@ -1,4 +1,6 @@
 <div class="container">
+
+    <!--  Top Header Code -->
     <h2> Convert JPG to PNG</h2>
     <input type="file" (change)="onFileSelected($event)" accept=".jpg,.jpeg" class="form-control" />
 
@@ -6,23 +8,44 @@
 
     <div class="converted-image">
         <div class="preview-container" *ngIf="originalImage">
-            <img [src]="originalImage.src" alt="Preview" >
-    
+            <img [src]="originalImage.src" alt="Preview">
+
+
+            <!--  Recaptcha Code -->
+            <div class="recaptcha">
+                <re-captcha (resolved)="onCaptchaResolved($event)" siteKey="6LcdnyErAAAAABpSy0NcemBw-NfEF6N4RI40tZHf">
+                </re-captcha>
+            </div>
+
+
+
+            <!--  Drop Down Code -->
             <h3>Choose Download Format</h3>
-    
-            <div class="dropdown-download">
+            <div class="dropdown-download" *ngIf="captchaPassed " >
                 <select id="downloadSelect" [(ngModel)]="selectedOption">
                     <option *ngFor="let option of downloadOptions" [ngValue]="option">
                         {{ option.label }} - {{ option.description }}
                     </option>
                 </select>
-    
+
+
+
+
+                <!-- Download button Code -->
                 <button (click)="downloadImage(selectedOption)" [disabled]="!selectedOption">
                     Download Image
                 </button>
+
+
+                <!--  Success Message Code -->
+                <p class="success-Message" *ngIf="isDownload"> Your File is Downloading, Please wait </p>
+
+
             </div>
-    
+
+
+
         </div>
     </div>
-    
+
 </div>

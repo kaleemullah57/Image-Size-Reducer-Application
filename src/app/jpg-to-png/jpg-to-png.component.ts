@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
 
 
 interface DownloadOption {
@@ -12,7 +13,7 @@ interface DownloadOption {
 
 @Component({
   selector: 'app-jpg-to-png',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RecaptchaFormsModule, RecaptchaModule],
   templateUrl: './jpg-to-png.component.html',
   styleUrl: './jpg-to-png.component.css'
 })
@@ -51,24 +52,45 @@ export class JpgToPngComponent {
 
 
 
+  // Recapthc Code.
+
+
+  captchaPassed = false;
+
+  onCaptchaResolved(captchaResponse: string | null) {
+    if (captchaResponse) {
+      console.log('CAPTCHA passed!', captchaResponse);
+      this.captchaPassed = true;
+    }
+  }
+
+  isDownload = false;
   downloadImage(option: DownloadOption | null) {
-  if (!option || !this.originalImage) return;
+    if (!this.captchaPassed) return;
+    if (!option || !this.originalImage) return;
 
-  const canvas = document.createElement('canvas');
-  canvas.width = option.width;
-  canvas.height = option.height;
+    this.isDownload = true;
+    const canvas = document.createElement('canvas');
+    canvas.width = option.width;
+    canvas.height = option.height;
 
-  const ctx = canvas.getContext('2d');
-  if (!ctx) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
 
-  ctx.drawImage(this.originalImage, 0, 0, option.width, option.height);
+    ctx.drawImage(this.originalImage, 0, 0, option.width, option.height);
 
-  const dataURL = canvas.toDataURL('image/png');
-  const link = document.createElement('a');
-  link.href = dataURL;
-  link.download = `converted-${option.label.replace(/\s|\(|\)/g, '')}.png`;
-  link.click();
-}
+    const dataURL = canvas.toDataURL('image/png');
+    const link = document.createElement('a');
+    link.href = dataURL;
+    link.download = `converted-${option.label.replace(/\s|\(|\)/g, '')}.png`;
+    link.click();
+
+
+    //  Destroy this.isDownload = false;
+    setTimeout(() => {
+      this.isDownload = false;
+    }, 5000);
+  }
 
   private getBaseFileName(): string {
     return this.selectedFileName.split('.').slice(0, -1).join('.') || 'converted-image';
