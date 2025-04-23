@@ -1,14 +1,125 @@
+/* Container for the toggle switch */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* The toggle switch container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide the default checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider (inside the switch) */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+/* The circle inside the slider */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+/* When the checkbox is checked, move the slider to the right */
+input:checked+.slider {
+    background-color: #4caf50;
+    /* Green when dark mode is on */
+}
+
+/* Move the circle to the right side */
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+/* Optional: Style the text */
+.toggle-container span {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container {
     width: 100%;
     min-height: 100vh;
     height: auto;
-    background-color: whitesmoke;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     padding: 20px 0px 0px 0px;
+    position: relative;
 }
 
 
@@ -18,6 +129,7 @@
     height: auto;
     margin-top: 10px;
     text-align: center;
+
 }
 
 .container .drop-downContainer h2 {
@@ -35,9 +147,11 @@
     font-size: 20px;
     font-family: Space Grotesk;
     border: none;
-    background-color: rgb(231, 228, 228);
-    box-shadow: 2px 2px 2px gray;
+    /* background-color: rgb(231, 228, 228); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     padding: 8px;
+    margin: 20px 0px 20px 0px;
+    /* background-color: transparent; */
 }
 
 .container .drop-downContainer select option {
@@ -45,6 +159,24 @@
     border: none;
 }
 
+
+
+
+.container .contact{
+    width: 200px;
+    height: auto;
+    /* background-color: red; */
+    text-align: center;
+    position: absolute;
+    /* position: sticky; */
+    top: 5;
+    right: 0px;
+    z-index: 1000;
+}
+.fab{
+    color: green;
+    font-size: 30px;
+}
 
 
 
@@ -65,10 +197,10 @@
     .container {
         width: 100%;
         height: auto;
-
+        position: relative;
     }
 
-    .container .drop-downContainer{
+    .container .drop-downContainer {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -76,25 +208,28 @@
         align-items: center;
         justify-content: center;
     }
-    .container .drop-downContainer h2{
+
+    .container .drop-downContainer h2 {
         color: black;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 800;
         font-family: Space Grotesk;
         word-spacing: 2px;
         line-height: 2;
     }
-    .container .drop-downContainer select{
+
+    .container .drop-downContainer select {
         /* background-color: blue; */
         color: black;
         width: 300px;
-        font-size: 31px;
+        font-size: 20px;
         font-weight: 600;
         font-size: Space Grotesk;
         padding: 12px;
         word-spacing: 2px;
     }
-    .container .drop-downContainer select option{
+
+    .container .drop-downContainer select option {
         /* background-color: blue; */
         color: black;
         width: 300px;
@@ -103,6 +238,19 @@
         font-size: Space Grotesk;
         padding: 2px;
         word-spacing: 2px;
+    }
+
+    .container .contact{
+        width: 200px;
+        height: auto;
+        /* background-color: red; */
+        text-align: center;
+        position: absolute;
+        position: sticky;
+        top: 0;
+        right:0 ;
+
+    
     }
 }
 

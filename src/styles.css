@@ -1,6 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
-*{
-    padding: 0%;
-    margin: 0%;
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+  }
+  
+  /* Light Mode (default) */
+  body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  body.dark-mode select,
+  body.dark-mode input,
+  body.dark-mode button {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+  }
+
+
+
+  
+body.dark-mode .container,
+body.dark-mode .container h2,
+body.dark-mode .drop-downContainer,
+body.dark-mode .pdf-converter,
+body.dark-mode .image-converter,
+body.dark-mode .contact {
+  background-color: #121212;
+  color: white;
 }
+  

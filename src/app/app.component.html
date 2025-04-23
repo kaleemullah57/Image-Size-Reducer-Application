@@ -1,4 +1,16 @@
-<div class="container">
+<div class="container" >
+  <!-- <button (click)="toggleThemse()"> Dark </button> -->
+
+
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" (change)="toggleThemse()" [checked]="isDarkMode">
+      <span class="slider"></span>
+    </label>
+    <span>{{ isDarkMode ? 'Dark Mode On' : 'Dark Mode Off' }}</span>
+  </div>
+  
+
 
 
   <div class="drop-downContainer">
@@ -22,6 +34,11 @@
     <app-jpg-to-png></app-jpg-to-png>
   </div>
 
+  <div class="contact">
+    <a href="https://wa.me/923169634937?text=Hi%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more!" class="floating-whatsapp" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
 
   <router-outlet></router-outlet>
 </div>

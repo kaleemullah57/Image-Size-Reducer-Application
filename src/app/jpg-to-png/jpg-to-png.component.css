@@ -49,6 +49,7 @@
 .container .converted-image .preview-container{
     text-align: center;
     align-items: center;
+
 }
 .container .converted-image .preview-container img{
     width: 400px;
@@ -148,7 +149,7 @@
 
     .container h2 {
         color: black;
-        font-size: 50px;
+        font-size: 30px;
         font-family: Space Grotesk;
         /* background-color: blue; */
     }
@@ -202,13 +203,13 @@
         margin: 0px 0px 100px 0px;
     }
     .container .converted-image .preview-container .dropdown-download #downloadSelect{
-        width: 400px;
+        width: 300px;
         padding: 12px;
     }
     .container .converted-image .preview-container .dropdown-download  select{
         color: black;
         width: 300px;
-        font-size: 31px;
+        font-size: 20px;
         font-weight: 600;
         font-size: Space Grotesk;
         padding: 12px;
@@ -216,7 +217,7 @@
     }
     .container .converted-image .preview-container .dropdown-download  select option{
         color: black;
-        width: 500px;
+        width: 300px;
         font-size: 9px;
         font-weight: 400;
         font-size: Space Grotesk;
@@ -224,12 +225,12 @@
         word-spacing: 2px;
     }
     .container .converted-image .preview-container .dropdown-download button{
-        width: 400px;
-        height: 70px;
+        width: 300px;
+        height: 50px;
         background-color: gray;
         box-shadow: 4px 4px 4px black;
         margin: 20px 0px 0px 0px;
-        font-size: 30px;
+        font-size: 25px;
         font-family: Space Grotesk;
         cursor: pointer;
     }
