@@ -1,69 +1,3 @@
-/* Container for the toggle switch */
-.toggle-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-/* The toggle switch container */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-/* Hide the default checkbox */
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-/* The slider (inside the switch) */
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-    border-radius: 34px;
-}
-
-/* The circle inside the slider */
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    border-radius: 50%;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: 0.4s;
-}
-
-/* When the checkbox is checked, move the slider to the right */
-input:checked+.slider {
-    background-color: #4caf50;
-    /* Green when dark mode is on */
-}
-
-/* Move the circle to the right side */
-input:checked+.slider:before {
-    transform: translateX(26px);
-}
-
-/* Optional: Style the text */
-.toggle-container span {
-    font-size: 14px;
-    color: #333;
-    font-weight: bold;
-}
 
 
 
@@ -123,6 +57,100 @@ input:checked+.slider:before {
     /* background-color: red; */
 }
 
+/* Container for the toggle switch */
+.container .toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* The toggle switch container */
+.container .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide the default checkbox */
+.container .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider (inside the switch) */
+.container .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+/* The circle inside the slider */
+.container .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+/* When the checkbox is checked, move the slider to the right */
+.container input:checked+.slider {
+    background-color: #4caf50;
+    /* Green when dark mode is on */
+}
+
+/* Move the circle to the right side */
+.container input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+/* Optional: Style the text */
+.container .toggle-container span {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .container .drop-downContainer {
@@ -136,7 +164,7 @@ input:checked+.slider:before {
 .container .drop-downContainer h2 {
     font-size: 32px;
     font-family: Space Grotesk;
-    padding: 10px;
+    padding: 5px;
     /* width: 40%; */
 }
 
@@ -158,6 +186,18 @@ input:checked+.slider:before {
 .container .drop-downContainer select option {
     background-color: rgb(194, 194, 194);
     border: none;
+}
+
+
+
+
+
+.contact .image-converter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 

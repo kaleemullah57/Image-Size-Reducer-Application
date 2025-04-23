@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    min-height: 62vh;
+    min-height: 50vh;
     height: auto;
     background-color: transparent;
     display: flex;
@@ -22,7 +22,7 @@
     /* width: 100%; */
     max-width: 100%;
     /* height: auto; */
-    min-height: 62vh;
+    min-height: 50vh;
     margin: 0px 0px 20px 0px;
     padding: 20px 45px 20px 45px;
     display: flex;
